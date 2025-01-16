@@ -1,0 +1,7 @@
+C:\Users\marti\Downloads\VideoExplicativoAspNet\VideoExplicativoAspNet\obj\Debug\net6.0\VideoExplicativoAspNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\Downloads\VideoExplicativoAspNet\VideoExplicativoAspNet\obj\Debug\net6.0\VideoExplicativoAspNet.AssemblyInfoInputs.cache
+C:\Users\marti\Downloads\VideoExplicativoAspNet\VideoExplicativoAspNet\obj\Debug\net6.0\VideoExplicativoAspNet.AssemblyInfo.cs
+C:\Users\marti\Downloads\VideoExplicativoAspNet\VideoExplicativoAspNet\obj\Debug\net6.0\VideoExplicativoAspNet.csproj.CoreCompileInputs.cache
+C:\Users\marti\Downloads\VideoExplicativoAspNet\VideoExplicativoAspNet\obj\Debug\net6.0\VideoExplicativoAspNet.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\marti\Downloads\VideoExplicativoAspNet\VideoExplicativoAspNet\obj\Debug\net6.0\VideoExplicativoAspNet.RazorAssemblyInfo.cache
+C:\Users\marti\Downloads\VideoExplicativoAspNet\VideoExplicativoAspNet\obj\Debug\net6.0\VideoExplicativoAspNet.RazorAssemblyInfo.cs

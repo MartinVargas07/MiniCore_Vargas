@@ -1,0 +1,59 @@
+@model IEnumerable<VideoExplicativoAspNet.Models.Gasto>
+
+@{
+    ViewData["Title"] = "Gastos - Filtrado";
+    var totales = ViewBag.TotalesPorDepartamento as IEnumerable<dynamic>;
+}
+
+<h1>Filtrar Gastos por Rango de Fechas</h1>
+
+<form method="get" action="">
+    <label for="fechaIni">Fecha Inicial:</label>
+    <input type="date" name="fechaIni" id="fechaIni" value="@ViewBag.FechaIni" />
+    
+    <label for="fechaFin">Fecha Final:</label>
+    <input type="date" name="fechaFin" id="fechaFin" value="@ViewBag.FechaFin" />
+    
+    <button type="submit">Filtrar</button>
+</form>
+
+<hr />
+
+<h2>Totales por Departamento</h2>
+<table border="1">
+    <tr>
+        <th>Departamento</th>
+        <th>Total</th>
+    </tr>
+    @if (totales != null)
+    {
+        foreach (var item in totales)
+        {
+            <tr>
+                <td>@item.Departamento</td>
+                <td>@item.Total</td>
+            </tr>
+        }
+    }
+</table>
+
+<hr />
+
+<h2>Listado de Gastos Filtrados</h2>
+<table border="1">
+    <tr>
+        <th>Fecha</th>
+        <th>Descripcion</th>
+        <th>Monto</th>
+        <th>Departamento</th>
+    </tr>
+    @foreach (var gasto in Model)
+    {
+        <tr>
+            <td>@gasto.Fecha.ToShortDateString()</td>
+            <td>@gasto.Descripcion</td>
+            <td>@gasto.Monto</td>
+            <td>@gasto.Departamento?.Nombre</td>
+        </tr>
+    }
+</table>
